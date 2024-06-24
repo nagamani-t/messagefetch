@@ -1,45 +1,24 @@
+/* Center the entire App */
 .App {
-  text-align: center;
-  font-size: larger;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
-text-transform: capitalize;
+  text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Center the content inside the App */
+.Content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Optional: add some padding */
+.Content p {
+  margin: 0;
+  font-size: 12px;
+  text-transform: capitalize;
 }
