@@ -1,19 +1,13 @@
+
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-      <div className="Content">
-        <img 
-          src={`${process.env.PUBLIC_URL}/dashboard.gif`} 
-          alt="Loading GIF" 
-          height={120} 
-          width={120} 
-          style={{ objectFit: 'contain' }}
-        />
-        <p>Welcome to Dashboard</p>
-        <p>Your SMS fetched successfully</p>
-      </div>
+      <div style={{ display: "flex", flexDirection: 'column', alignItems: "center", gap: "10px" }}><img src={`${process.env.PUBLIC_URL}/dashboard.gif`} alt="Loading GIF" height={120} width={120} /> 
+      welcome to dashboard
+      <p style={{fontSize:'12px'}}>your sms fetched successfully</p></div>
     </div>
   );
 }
