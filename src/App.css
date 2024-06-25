@@ -8,14 +8,13 @@
   width: 100%;
   height: 100vh;
   text-transform: capitalize;
+  background-color: aliceblue;
 }
 
 @media (max-width: 600px) {
   .App {
-    height: 100vh;
+    height:100vh ;
     font-size: medium;
     padding: 10px;
-
-    
   }
 }
