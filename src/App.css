@@ -6,16 +6,16 @@
   justify-content: center;
   align-items: center;
   text-transform: capitalize;
-  height: 97.7vh;
-  width:95vw;
+  height: 97.6vh;
   
 }
 
 @media (max-width: 600px) {
   .App {
-
     font-size: medium;
     padding: 10px;
-
+    display: flex;
+    background-color:rgb(132, 47, 126) ;
+    max-height: 200%;
   }
 }

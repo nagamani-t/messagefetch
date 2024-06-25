@@ -1,7 +1,6 @@
 body {
+  box-sizing: border-box;
   margin: 0;
-  height: 100vh; /* 100% of the viewport height */
-  width: 100vw;
   padding: 0;
 }
 
