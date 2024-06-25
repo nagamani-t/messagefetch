@@ -4,10 +4,11 @@ import './App.css';
 
 function App() {
   const [userData, setUserData] = useState({ name: '', phoneNumber: '', email: '' });
+
   const onButtonClick = () => {
-    if (window.ReactNativeWebView) {
-      window.ReactNativeWebView.postMessage('navigateBack');
-      console.log(" window.ReactNativeWebView.postMessage('navigateBack');", window.ReactNativeWebView.postMessage('navigateBack'))
+    if (window.Android) {
+      window.Android.postMessage('navigateBack');
+      console.log("Sent message to Android via window.Android.postMessage('navigateBack')");
     }
   };
   useEffect(() => {
