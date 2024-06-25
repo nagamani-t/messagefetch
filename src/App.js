@@ -7,6 +7,7 @@ function App() {
   const onButtonClick = () => {
     if (window.ReactNativeWebView) {
       window.ReactNativeWebView.postMessage('navigateBack');
+      console.log(" window.ReactNativeWebView.postMessage('navigateBack');", window.ReactNativeWebView.postMessage('navigateBack'))
     }
   };
   useEffect(() => {
