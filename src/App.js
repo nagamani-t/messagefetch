@@ -1,13 +1,29 @@
 import './App.css';
-import Dashboard from './dashboard';
+
 
 function App() {
   return (
-    <div >
-     <Dashboard/>
+    <div style={styles.container}>
+    <div style={styles.centeredContent}>
+        Your centered text goes here
     </div>
+</div>
   );
 }
+const styles = {
+  container: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      minHeight: '100vh',
+      margin: 0,
+      padding: 0,
+  },
+  centeredContent: {
+      textAlign: 'center',
+  },
+};
+
 
 
 export default App;

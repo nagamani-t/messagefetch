@@ -15,7 +15,7 @@ const styles = {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '100vh',
+        minHeight: "100vh",
         margin: 0,
         padding: 0,
     },
