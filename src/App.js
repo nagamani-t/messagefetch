@@ -4,7 +4,11 @@ import './App.css';
 
 function App() {
   const [userData, setUserData] = useState({ name: '', phoneNumber: '', email: '' });
-
+  const onButtonClick = () => {
+    if (window.ReactNativeWebView) {
+      window.ReactNativeWebView.postMessage('navigateBack');
+    }
+  };
   useEffect(() => {
     const params = getQueryParams();
     console.log("params",params)
@@ -18,6 +22,7 @@ function App() {
           <p style={{ fontSize: '24px' }}>Welcome to dashboard {userData?.name}!</p>
           <p style={{ fontSize: '12px' }}>Your SMS fetched successfully from {userData?.phoneNumber} contact number</p>
         </div>
+        <button onClick={onButtonClick}>Go Back</button>
       </div>
     </div>
   );
