@@ -10,8 +10,9 @@
   text-transform: capitalize;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .App {
+    height: 100vh;
     font-size: medium;
     padding: 10px;
   }
