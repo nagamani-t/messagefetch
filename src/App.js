@@ -6,9 +6,11 @@ function App() {
   const [userData, setUserData] = useState({ name: '', phoneNumber: '', email: '' });
 
   const onButtonClick = () => {
-    if (window.Android) {
-      window.Android.postMessage('navigateBack');
-      console.log("Sent message to Android via window.Android.postMessage('navigateBack')");
+    if (window.jsInterface) {
+      window.jsInterface.postMessage('navigateBack');
+      console.log("Sent message to Android via window.jsInterface.postMessage('navigateBack')");
+    } else {
+      console.log("window.jsInterface is not defined");
     }
   };
   useEffect(() => {
