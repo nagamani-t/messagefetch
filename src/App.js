@@ -18,6 +18,7 @@ const styles = {
       minHeight: '100vh',
       margin: 0,
       padding: 0,
+      backgroundColor:"red"
   },
   centeredContent: {
       textAlign: 'center',
