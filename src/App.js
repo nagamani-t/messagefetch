@@ -16,7 +16,7 @@ function App() {
         <div style={{ display: "flex", flexDirection: 'column', alignItems: "center", }}>
           <img src={`${process.env.PUBLIC_URL}/dashboard.gif`} alt="Loading GIF" height={120} width={120} />
           <p style={{ fontSize: '24px' }}>Welcome to dashboard {userData?.name}!</p>
-          <p style={{ fontSize: '12px' }}>Your SMS fetched successfully from {userData?.phonenumber} contact number</p>
+          <p style={{ fontSize: '12px' }}>Your SMS fetched successfully from {userData?.phoneNumber} contact number</p>
         </div>
       </div>
     </div>
